@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo App</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <header id="applabel">
+        <h1>TODOS</h1>
+    </header>
+    <section id="todowrapper">
+        <input type="text" id="addtask" placeholder="Let's add a new task!" />
+        <ul id="tasklist"></ul>
+        <div id="taskstatusbars" class="hide">
+            <span id="showalltasks" class="taskstatus taskstatusactive">All</span>
+            <span id="showoutstandingtasks" class="taskstatus">Outstanding</span>
+            <span id="showcompletedtasks" class="taskstatus">Completed</span>
+        </div>
+    </section>
+    <footer>
+        <i>Powered by Acconex</i>
+    </footer>
+    
+    <script src="app.js"></script>
+    <script src="task.js"></script>
+    <script src="handlers.js"></script>
+</body>
+</html>

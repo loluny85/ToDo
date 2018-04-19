@@ -1,0 +1,149 @@
+* {
+    outline: none;
+    padding: 0;
+}
+
+span, div, ul {
+    border-radius: 4px;
+}
+
+body {
+    display: grid;
+    grid-template-columns: 30% 40% 30%;
+    grid-template-rows: 100px 500px 110px;
+}
+
+::-webkit-input-placeholder {
+    font-style: italic;
+    color: #d3d3d3;
+ }
+ :-moz-placeholder {
+    font-style: italic;
+    color: #d3d3d3; 
+ }
+ ::-moz-placeholder {
+    font-style: italic;
+    color: #d3d3d3; 
+ }
+ :-ms-input-placeholder {  
+    font-style: italic;
+    color: #d3d3d3;
+ }
+
+ #applabel {
+     grid-column-start: 2;
+     margin: 0 auto;
+     color: #cc9a9a;
+     font-size: 18px;
+     font-style: oblique;
+     text-decoration: underline;
+ }
+
+#todowrapper {
+    grid-column-start: 2;
+    grid-row-start: 2;
+    width: 426px;
+    justify-self: center;
+}
+
+#addtask {
+    width: 400px;
+    height: 50px;
+    border: 1px solid #d3d3d3;
+    font-size: 24px;
+    padding-left: 24px;
+    color: #808080;
+}
+
+#tasklist {
+    list-style-type: none;
+    width: 428px;
+    margin: 0;
+    display: inline-block;
+    max-height: 364px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.taskitem {
+    display: grid;
+    grid-template-columns: 10% 70% 7% 7% 6%;
+    border: 1px solid #d3d3d3;
+    font-size: 24px;
+    line-height: 50px;
+    color: #808080;
+    width: 400px;
+    padding-left: 24px;
+}
+
+.taskDeleteButton {
+    cursor: pointer;
+    display: none;
+    color: #cc9a9a;
+    font-size: 20px;
+}
+
+.taskitem:hover .taskDeleteButton{
+    display: block;
+}
+
+#higherprioritizetask {
+    display: none;
+    cursor: pointer;
+}
+
+#higherprioritizetask:hover {
+    color: #32cd32;
+}
+
+#lowerprioritizetask:hover {
+    color: #ff4500;
+}
+
+#lowerprioritizetask {
+    display: none;
+    cursor: pointer;
+}
+
+.taskitem:hover #higherprioritizetask {
+    display: block;
+}
+
+.taskitem:hover #lowerprioritizetask {
+    display: block;
+}
+
+.taskcheckbox {
+    align-self: center;
+    transform: scale(1.5);
+}
+
+#taskstatusbars {
+    display: grid;
+    grid-template-columns: 26% 40% 31%;
+    cursor: pointer;
+}
+
+.taskstatus {
+    justify-self: center;
+    margin-top: 8px;
+}
+
+footer {
+    grid-column-start: 2;
+    align-self: end;
+    margin: 0 auto;
+}
+
+.taskstatusactive {
+    border: 1px solid #008000;
+    padding: 0 6px;
+}
+
+.marktaskcomplete {
+    text-decoration: line-through;
+}
+
+.hide {
+    display: none !important;
+}
